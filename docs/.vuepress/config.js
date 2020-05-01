@@ -6,7 +6,7 @@ module.exports = {
   },
   title: "XShare",
   description: '分享，让世界更美好...',
-  dest: 'public',
+  dest: '/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
