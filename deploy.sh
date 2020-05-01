@@ -13,6 +13,8 @@ yarn install
 # 生成静态文件
 yarn build
 
+mv public/* `pwd`
+
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
 
