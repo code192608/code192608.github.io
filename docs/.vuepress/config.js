@@ -10,14 +10,7 @@ module.exports = {
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
-      "meta",
-      {
-        name: "viewport",
-        content: "width=device-width,initial-scale=1,user-scalable=no",
-      },
-    ],
-    [
-      ("script",
+      "script",
       {},
       `
         var _hmt = _hmt || [];
@@ -27,8 +20,15 @@ module.exports = {
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-        `),
-    ]
+        `,
+    ],
+    [
+      "meta",
+      {
+        name: "viewport",
+        content: "width=device-width,initial-scale=1,user-scalable=no",
+      },
+    ],
   ],
   theme: "reco",
   themeConfig: {
