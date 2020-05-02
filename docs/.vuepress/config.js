@@ -1,4 +1,10 @@
 module.exports = {
+  plugins: {
+    'vuepress-plugin-baidu-autopush': {},
+    'sitemap': {
+      hostname: 'https://xshare.codekong.cn'
+    },
+  },
   locales: {
     "/": {
       lang: "zh-CN",
