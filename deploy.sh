@@ -13,10 +13,15 @@ yarn install
 # 生成静态文件
 yarn build
 
-mv public/* `pwd`
+rm -rf README.md
+rm -rf docs
+rm -rf node_modules
+rm -rf package.json
+rm -rf yarn.lock
 
-# 如果是发布到自定义域名
-# echo 'www.example.com' > CNAME
+
+mv public/* `pwd`
+rm -rf public
 
 git add -A
 git commit -m 'deploy'
