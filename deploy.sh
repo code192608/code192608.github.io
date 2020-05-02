@@ -28,4 +28,7 @@ git commit -m 'deploy'
 
 git push -f origin master
 
+# 刷新CDN缓存
+tccli cdn PurgeUrlsCache --version 2018-06-06 --Urls '["https://xshare.codekong.cn"]'
+
 git checkout docs
